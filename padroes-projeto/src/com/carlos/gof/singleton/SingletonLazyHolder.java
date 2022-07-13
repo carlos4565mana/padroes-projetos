@@ -1,4 +1,4 @@
-package com.carlos.gof;
+package com.carlos.gof.singleton;
 /**
  * Lazy Holder
  *
