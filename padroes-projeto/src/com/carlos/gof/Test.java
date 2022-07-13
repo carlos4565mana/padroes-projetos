@@ -1,5 +1,6 @@
 package com.carlos.gof;
 
+import com.carlos.gof.facade.Facade;
 import com.carlos.gof.singleton.SingletonEager;
 import com.carlos.gof.singleton.SingletonLazy;
 import com.carlos.gof.singleton.SingletonLazyHolder;
@@ -45,6 +46,11 @@ public class Test {
 		robo.mover();
 		robo.setComportamento(normal);
 		robo.mover();
+		
+		//Facade
+		
+		Facade facade = new Facade();
+		facade.migrarCliente("Carlos", "123456754");
 
 	}
 
