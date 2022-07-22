@@ -30,6 +30,11 @@ public class Cliente {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
+
+	@Override
+	public String toString() {
+		return "Cliente [codido=" + codido + ", nome=" + nome + ", telefone=" + telefone + "]";
+	}
 	
 	
 	

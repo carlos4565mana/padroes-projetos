@@ -1,4 +1,4 @@
-package com.carlos.gof.strategy;
+package com.carlos.gof.strategy.robo;
 
 public class Robo {
 	private Comportamento comportamento;

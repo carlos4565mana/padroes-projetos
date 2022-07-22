@@ -21,6 +21,11 @@ public class Vendedor {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+	@Override
+	public String toString() {
+		return "Vendedor [codigo=" + codigo + ", nome=" + nome + "]";
+	}
 	
 	
 }

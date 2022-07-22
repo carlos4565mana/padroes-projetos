@@ -37,10 +37,12 @@ public class Pedido {
 		this.produtos = arrayList;
 		
 	}
-	
-	
 
-
+	@Override
+	public String toString() {
+		return "Pedido [numeroPedido=" + numeroPedido + ", produtos=" + produtos + ", cliente=" + cliente
+				+ ", vendedor=" + vendedor + "]";
+	}
 	
 	
 	
