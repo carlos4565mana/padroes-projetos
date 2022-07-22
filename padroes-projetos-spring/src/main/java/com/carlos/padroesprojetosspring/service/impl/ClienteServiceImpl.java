@@ -12,9 +12,15 @@ import com.carlos.padroesprojetosspring.repositories.EnderecoRepository;
 import com.carlos.padroesprojetosspring.service.ClienteService;
 import com.carlos.padroesprojetosspring.service.ViaCepService;
 
-
+/**
+ * 
+ * Implementação da Strategy
+ * Injetada peloSpring (via Autowired)
+ * Service será tratada como Singleton
+ */
 @Service
 public class ClienteServiceImpl implements ClienteService{
+	// Singleton: Injetar os componentes do Spring com @Autowired.
 	
 	@Autowired
 	private ClienteRepository clienteRepository;
@@ -26,6 +32,9 @@ public class ClienteServiceImpl implements ClienteService{
 	@Autowired
 	private ViaCepService viaCepService;
 	
+	
+	// Strategy: Implementar os mÃ©todos definidos na interface.
+	// Facade: Abstrair integraÃ§Ãµes com subsistemas, provendo uma interface simples.
 
 	@Override
 	public Iterable<Cliente> buscarTodos() {

@@ -13,7 +13,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.carlos.padroesprojetosspring.model.Cliente;
 import com.carlos.padroesprojetosspring.service.ClienteService;
-
+/**
+ * 
+ *Aqui representa a Facade
+ *Pois abstrai toda a complexibilidade de integrações(Banco de Dados H2 e
+ *api ViaCep) em uma interface simpless e coesa
+ */
 @RestController
 @RequestMapping("clientes")
 public class ClienteRestController {
